@@ -57,6 +57,65 @@ header img{
     justify-content: space-between;
     width: 400px;
 }
+
+@keyframes animate{
+    from{opacity: 1;}
+    from{opacity: 0;}
+}
+.mdl_chat{
+    width: 800px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: black;
+    position: absolute  ;
+    z-index: 1;
+    display: none;
+    animation: animate;
+    animation-duration: 800ms;
+    
+}
+.mdl_solicitacoes{
+    width: 800px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: black;
+    position: absolute  ;
+    z-index: 1;
+    display: none;
+    animation: animate;
+    animation-duration: 800ms;
+    
+}
+.mdl_manual{
+    width: 800px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: black;
+    position: absolute  ;
+    z-index: 1;
+    display: none;
+    animation: animate;
+    animation-duration: 800ms;
+    
+}
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    color: white; 
+    cursor: pointer;
+}
+.fechar{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-right: 2%;
+}
 a{
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
@@ -106,6 +165,7 @@ footer{
     align-items: center;
     justify-content: center;
     background-image: url(assets/bg-footer.png);
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100px;
 }

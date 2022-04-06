@@ -15,14 +15,18 @@
             <div class="header_container">
                 <img src="assets/LOGO_B.png" alt="">
                 <div class="modal">
-                    <a href="">chat</a>
-                    <a href="">solicitações</a>
-                    <a href="">manual do aluno</a>
+                    
+                    <div class="btn"  onclick="acao()">chat</div>
+                    <div class="btn"  onclick="acao()">solicitações</div>
+                    <div class="btn"  onclick="acao()">manual do aluno</div>
                 </div>
             </div>
         </div>
     </header>
     <main>
+        <div class="mdl_chat"><div onclick="fechar()" class="fechar"></div></div>
+        <div class="mdl_solicitacoes"><div onclick="fechar()" class="fechar"></div></div>
+        <div class="mdl_manual"><div onclick="fechar()" class="fechar"></div></div>
         <section>
             <img src="assets/info.jpg" alt="">
             
@@ -37,6 +41,18 @@
         <h1>@ Senai todos os direitos reservados</h1>
        </footer>
 
+      <script>
+          function acao() {
+               document.querySelector('.mdl_chat').style.display = 'block'
+               document.querySelector('.mdl_solicitacoes').style.display = 'block'
+               document.querySelector('.mdl_manual').style.display = 'block'
+          }
+          function fechar() {
+            document.querySelector('.mdl_chat').style.display = 'none'
+               document.querySelector('.mdl_solicitacoes').style.display = 'none'
+               document.querySelector('.mdl_manual').style.display = 'none'
+          }
+      </script> 
 </body>
 
 </html>
