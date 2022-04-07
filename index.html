@@ -16,25 +16,36 @@
                 <img src="assets/LOGO_B.png" alt="">
                 <div class="modal">
                     
-                    <div class="btn"  onclick="acao()">chat</div>
-                    <div class="btn"  onclick="acao()">solicitações</div>
-                    <div class="btn"  onclick="acao()">manual do aluno</div>
+                    <div class="btn"  onclick="acao_chat()">chat</div>
+                    <div class="btn"  onclick="acao_soli()">solicitações</div>
+                    <div class="btn"  onclick="acao_manual()">manual do aluno</div>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="mdl_chat"><div onclick="fechar()" class="fechar"></div></div>
-        <div class="mdl_solicitacoes"><div onclick="fechar()" class="fechar"></div></div>
-        <div class="mdl_manual"><div onclick="fechar()" class="fechar"></div></div>
+        <div class="mdl_chat"><div onclick="fechar()" class="fechar_chat"></div></div>
+        <div class="mdl_solicitacoes">
+            <div onclick="fechar()" class="fechar_soli"></div>
+        <section class="soli">
+            <a href="#">Reset de senha da rede</a>
+            <a href="#">Reset de senha do portal educacional</a>
+            <a href="#">Solicitação e Declaração para almoçar no SESI</a>
+            <a href="#">Solicitação de bilhate SPtrans</a>
+        </section>
+    </div>
+        <div class="mdl_manual">
+            <div onclick="fechar()" class="fechar_manual"></div>
+            
+        </div>
         <section>
-            <img src="assets/info.jpg" alt="">
+            <img src="assets/info.png" alt="">
             
         </section>
         <div class="container_img">
-            <img class="imagem" src="assets/info.jpg" alt="">
-            <img class="imagem" src="assets/info.jpg" alt="">
-            <img class="imagem" src="assets/info.jpg" alt="">
+            <img class="imagem" src="assets/not.png" alt="">
+            <img class="imagem" src="assets/not.png" alt="">
+            <img class="imagem" src="assets/not.png" alt="">
         </div>
     </main>
     <footer> 
@@ -42,11 +53,21 @@
        </footer>
 
       <script>
-          function acao() {
+          function acao_chat() {
                document.querySelector('.mdl_chat').style.display = 'block'
+               
+          }
+          function acao_soli() {
+               
                document.querySelector('.mdl_solicitacoes').style.display = 'block'
+               
+          }
+          function acao_manual() {
+               
+               
                document.querySelector('.mdl_manual').style.display = 'block'
           }
+
           function fechar() {
             document.querySelector('.mdl_chat').style.display = 'none'
                document.querySelector('.mdl_solicitacoes').style.display = 'none'
